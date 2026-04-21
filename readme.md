@@ -3,7 +3,7 @@
 Architecture draft for a B2B advertising platform focused on fast MVP delivery and financial correctness. 
 The goal is to have production-oriented architecture, strong money consistency, and scalable module boundaries for a small team of developers.
 
-## 0) Assumptions
+## 0) Constraints
 
 - Stack: `Django` + `React`
 - Team: small fullstack team
