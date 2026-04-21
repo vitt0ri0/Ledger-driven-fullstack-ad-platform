@@ -1,5 +1,17 @@
 🏗 2. Backend Architecture (Django)
 
+### Libraries choice
+
+* `Django`: core web framework, ORM, migrations, admin tooling
+* `Django REST Framework`: API serializers, permissions, pagination, browsable contracts
+* `psycopg`/`psycopg2`: stable PostgreSQL driver for transactional workloads
+* `Celery`: asynchronous jobs for sync, retries, and reconciliation routines
+* `redis-py` + `Redis`: broker/cache layer for async execution and short-lived state
+* `django-filter`: consistent filtering for list/reporting endpoints
+* `pytest` + `pytest-django`: fast and explicit test setup for domain and API layers
+* `factory-boy`: reusable test data factories for complex financial scenarios
+* `drf-spectacular`: OpenAPI schema generation for stable backend/frontend contracts
+
 📁 Apps structure
 
 ```
@@ -20,6 +32,7 @@ Why `Django + DRF`:
 * strong ecosystem for admin operations and business dashboards
 * explicit serializers/permissions for stable API contracts
 * natural fit for modular app boundaries and incremental domain growth
+
 
 🔐 accounts
 

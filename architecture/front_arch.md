@@ -2,6 +2,17 @@
 
 Frontend is oriented around operational workflows, not just screens: campaign control, wallet visibility, and integration monitoring.
 
+### Libraries choice
+
+* `React`: component model for dashboard and operational workflows
+* `TypeScript`: safer refactors and explicit API-driven UI contracts
+* `Vite`: fast local feedback and simple build setup
+* `React Router`: route-level decomposition for dashboard modules
+* `TanStack Query`: server-state caching, retries, stale/fresh policy control
+* `React Hook Form`: performant form state management with minimal re-renders
+* `Zod`: schema-based validation for runtime checks and typed form contracts
+* `Axios` or `fetch` wrapper: centralized API client behavior (timeouts, auth headers, error mapping)
+
 ```text
 frontend/
   src/
@@ -40,13 +51,7 @@ shared/
 * config
 * utils
 
-Library choices and rationale:
 
-* `React + TypeScript`: predictable UI composition with strong type safety
-* `Vite`: fast local feedback and simple build setup
-* `React Router`: route-level decomposition for dashboard modules
-* `TanStack Query`: server-state caching, retries, stale/fresh policy control
-* `React Hook Form + Zod`: efficient forms with schema-based validation
 
 ⸻
 

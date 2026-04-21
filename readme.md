@@ -52,6 +52,7 @@ Production-oriented architecture, strong money consistency, and scalable module 
 ## 7) Infrastructure Layer
 
 MVP-oriented runtime based on `PostgreSQL`, `Redis`, `Django API`, and `Celery`, with staging-to-production promotion.
+Details: [architecture/infrastructure.md](architecture/infrastructure.md)
 
 ---
 
@@ -64,3 +65,4 @@ Backend, frontend, and E2E test approach is documented here: [architecture/testi
 ## 9) Deployment Approach
 
 CI validation, staged rollout, rollback readiness, and post-deploy checks for money-critical flows.
+Details: [architecture/deployment.md](architecture/deployment.md)
