@@ -25,6 +25,8 @@ Diagrams: [architecture/c4_diagram.md](architecture/c4_diagram.md)
 
 Domain apps, API boundaries, async workers, and reliability rules are documented here: [architecture/back_arch.md](architecture/back_arch.md)
 
+FSM design[fsm.py](backend/fsm/fsm.py)
+
 ---
 
 ## 3) Frontend Architecture (React)
