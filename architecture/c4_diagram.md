@@ -8,6 +8,15 @@ This document describes the project using C4 levels:
 
 ---
 
+## Notes
+
+- `Billing` orchestrates money operations but does not replace ledger invariants.
+- `Ledger` is the financial source of truth (double-entry + immutability).
+- `FSM` guards process transitions and keeps workflow logic explicit.
+- `Reconciliation` verifies internal records against external systems and raises discrepancies.
+
+---
+
 ## C4 Level 1 - System Context
 
 ```mermaid
@@ -25,6 +34,8 @@ flowchart TB
   ADS -->|Performance and spend data| AP
   AP -->|Export reports / KPIs| ANA
 ```
+
+
 
 ---
 
@@ -57,6 +68,8 @@ flowchart TB
   W -->|sync pull/push| ADS
   ADS -->|events / metrics| W
 ```
+
+
 
 ---
 
@@ -92,11 +105,5 @@ flowchart TB
   BIL --> AUD
 ```
 
----
 
-## Notes
 
-- `Billing` orchestrates money operations but does not replace ledger invariants.
-- `Ledger` is the financial source of truth (double-entry + immutability).
-- `FSM` guards process transitions and keeps workflow logic explicit.
-- `Reconciliation` verifies internal records against external systems and raises discrepancies.
