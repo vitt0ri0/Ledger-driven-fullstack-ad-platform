@@ -1,11 +1,11 @@
-# Ad Platform with Strong Money Consistency
+# Ledger-driven fullstack ad platform
 
 Architecture draft for a B2B advertising platform focused on fast MVP delivery and financial correctness.
 
 ## 0) Assumptions
 
 - Stack: `Django` + `React`
-- Team: small development team
+- Team: small fullstack team
 - Delivery: short time to MVP release
 
 ---
@@ -15,6 +15,7 @@ Architecture draft for a B2B advertising platform focused on fast MVP delivery a
 Backend-centric design with clear domain boundaries, explicit workflow transitions, and a ledger-first money model.
 
 Details: [architecture/architecture_intent.md](architecture/architecture_intent.md)
+Diagrams: [architecture/c4_diagram.md](architecture/c4_diagram.md)
 
 ---
 
