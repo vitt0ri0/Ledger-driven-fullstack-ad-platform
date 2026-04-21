@@ -1,6 +1,7 @@
 # Ledger-driven fullstack ad platform
 
-Architecture draft for a B2B advertising platform focused on fast MVP delivery and financial correctness.
+Architecture draft for a B2B advertising platform focused on fast MVP delivery and financial correctness. 
+The goal is to have production-oriented architecture, strong money consistency, and scalable module boundaries for a small team of developers.
 
 ## 0) Assumptions
 
@@ -15,6 +16,7 @@ Architecture draft for a B2B advertising platform focused on fast MVP delivery a
 Backend-centric design with clear domain boundaries, explicit workflow transitions, and a ledger-first money model.
 
 Details: [architecture/architecture_intent.md](architecture/architecture_intent.md)
+
 Diagrams: [architecture/c4_diagram.md](architecture/c4_diagram.md)
 
 ---
@@ -37,32 +39,20 @@ Workflow control, financial invariants, and consistency checks are documented he
 
 ---
 
-## 5) Suggested Implementation Sequence
-
-Recommended order: establish backend contracts, implement ledger/FSM core, build frontend slices, then add reconciliation and observability.
-
----
-
-## 6) Project Goals
-
-Production-oriented architecture, strong money consistency, and scalable module boundaries for a small team.
-
----
-
-## 7) Infrastructure Layer
+## 5) Infrastructure Layer
 
 MVP-oriented runtime based on `PostgreSQL`, `Redis`, `Django API`, and `Celery`, with staging-to-production promotion.
 Details: [architecture/infrastructure.md](architecture/infrastructure.md)
 
 ---
 
-## 8) Testing Strategy
+## 6) Testing Strategy
 
 Backend, frontend, and E2E test approach is documented here: [architecture/testing.md](architecture/testing.md)
 
 ---
 
-## 9) Deployment Approach
+## 7) Deployment Approach
 
 CI validation, staged rollout, rollback readiness, and post-deploy checks for money-critical flows.
 Details: [architecture/deployment.md](architecture/deployment.md)
